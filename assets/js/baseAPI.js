@@ -2,7 +2,7 @@
 // 在该函数中可以拿到给ajax提供的配置对象
 $.ajaxPrefilter(function(option) {
     console.log(option)
-    option.url = 'http://www.liulongbin.top:3007' + option.url
+    option.url = 'http://big-event-api-t.itheima.net' + option.url
 
     // 统一为有权限的接口设置header请求头
     // 只有包含/my的接口需要加请求头权限

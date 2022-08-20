@@ -51,16 +51,12 @@ function renderAvatar(user) {
     var name = user.nickname || user.username
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
     // 按需渲染用户头像
-    console.log(user.user_pic)
     if(user.user_pic !== null) {
-        console.log('11')
         $('.layui-nav-img').attr('src', user.user_pic).show()
         $('.text-avatar').hide()
     }else{
-        console.log('122')
         $('.layui-nav-img').hide()
         var first = name[0].toUpperCase()
-        console.log(first)
         $('.text-avatar').html(first).show()
     }
 }
